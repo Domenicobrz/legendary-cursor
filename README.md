@@ -4,12 +4,12 @@ This Legendary +10 Cursor library grants to the user an unlimited feeling of pow
 
 A direct consequence of using this skin for your cursor is the permanent modification of the following attributes:
 
-- +380% Clicking precision
-- +280% Mouse ferocity
-- +120% Left click magic power
-- +380% Carpal tunnel chance reduction
-- +380% Wrist pain reduction
-- +999% User random swing chance
+- [x] +380% Clicking precision
+- [x] +280% Mouse ferocity
+- [x] +120% Left click magic power
+- [x] +380% Carpal tunnel chance reduction
+- [x] +380% Wrist pain reduction
+- [x] +999% User random swing chance
 
 # How to achieve the same level of greatness in your webpage
 
@@ -20,7 +20,7 @@ npm i legendary-cursor
 And to activate it in your webpage:
 
 ``` javascript
-import LegendaryCursor from "./src/index";
+import LegendaryCursor from "legendary-cursor";
 
 window.addEventListener("load", () => {
     LegendaryCursor.init();
@@ -30,7 +30,7 @@ window.addEventListener("load", () => {
 There's a few options you can change with the following arguments:
 
 ``` javascript
-import LegendaryCursor from "./src/index";
+import LegendaryCursor from "legendary-cursor";
 
 window.addEventListener("load", () => {
 
@@ -47,3 +47,7 @@ window.addEventListener("load", () => {
 
 });
 ```
+
+# Credits
+
+Took inspiration from [this awesome article](https://tympanus.net/codrops/2019/09/24/crafting-stylised-mouse-trails-with-ogl/) made by [Nathan Gordon](https://github.com/gordonnl)
