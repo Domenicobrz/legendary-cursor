@@ -51,6 +51,10 @@ LegendaryCursor.init = function(args) {
     renderer.autoClear = false;
     renderer.setSize( window.innerWidth, window.innerHeight );
     renderer.domElement.style.pointerEvents = "none";
+    renderer.domElement.style.position = "fixed";
+    renderer.domElement.style.top = "0";
+    renderer.domElement.style.left = "0";
+    renderer.domElement.style.zIndex = "99999";
     document.body.appendChild( renderer.domElement );
 
     scene = new THREE.Scene();
@@ -61,7 +65,7 @@ LegendaryCursor.init = function(args) {
     clock = new THREE.Clock();
 
     let t1, t2, t4;
-    new THREE.TextureLoader().load(args.texture1 || "src/assets/t4.jpg", function(texture) {
+    new THREE.TextureLoader().load(args.texture1 || "https://domenicobrz.github.io/assets/legendary-cursor/t3.jpg", function(texture) {
         // setting these values will prevent the texture from being downscaled internally by three.js
         texture.generateMipmaps = false;
         texture.wrapS = texture.wrapT = THREE.ClampToEdgeWrapping;
@@ -70,7 +74,7 @@ LegendaryCursor.init = function(args) {
         onDl();
     });
 
-    new THREE.TextureLoader().load(args.texture2 || "src/assets/t6_1.jpg", function(texture) {
+    new THREE.TextureLoader().load(args.texture2 || "https://domenicobrz.github.io/assets/legendary-cursor/t6_1.jpg", function(texture) {
         // setting these values will prevent the texture from being downscaled internally by three.js
         texture.generateMipmaps = false;
         texture.wrapS = texture.wrapT = THREE.ClampToEdgeWrapping;
@@ -79,7 +83,7 @@ LegendaryCursor.init = function(args) {
         onDl();
     });
 
-    new THREE.TextureLoader().load("src/assets/ts.png", function(texture) {
+    new THREE.TextureLoader().load(args.texture3 || "https://domenicobrz.github.io/assets/legendary-cursor/ts.png", function(texture) {
         t4 = texture;        
         onDl();
     });

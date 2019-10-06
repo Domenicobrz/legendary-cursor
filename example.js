@@ -11,6 +11,7 @@ window.addEventListener("load", () => {
         maxOpacity:       0.99,  // should be a number between [0 ... 1]
         // texture1:         "http://path_to_texture",      // texture displayed on mouse hover
         // texture2:         "http://path_to_texture",      // texture displayed on mouse click
+        // texture3:         "http://path_to_texture",      // texture displayed on sparkles
     });
 
 });

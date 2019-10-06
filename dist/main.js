@@ -109,6 +109,7 @@ window.addEventListener("load", () => {
         maxOpacity:       0.99,  // should be a number between [0 ... 1]
         // texture1:         "http://path_to_texture",      // texture displayed on mouse hover
         // texture2:         "http://path_to_texture",      // texture displayed on mouse click
+        // texture3:         "http://path_to_texture",      // texture displayed on sparkles
     });
 
 });
@@ -49114,6 +49115,10 @@ LegendaryCursor.init = function(args) {
     renderer.autoClear = false;
     renderer.setSize( window.innerWidth, window.innerHeight );
     renderer.domElement.style.pointerEvents = "none";
+    renderer.domElement.style.position = "fixed";
+    renderer.domElement.style.top = "0";
+    renderer.domElement.style.left = "0";
+    renderer.domElement.style.zIndex = "99999";
     document.body.appendChild( renderer.domElement );
 
     scene = new three__WEBPACK_IMPORTED_MODULE_0__["Scene"]();
@@ -49124,7 +49129,7 @@ LegendaryCursor.init = function(args) {
     clock = new three__WEBPACK_IMPORTED_MODULE_0__["Clock"]();
 
     let t1, t2, t4;
-    new three__WEBPACK_IMPORTED_MODULE_0__["TextureLoader"]().load(args.texture1 || "src/assets/t4.jpg", function(texture) {
+    new three__WEBPACK_IMPORTED_MODULE_0__["TextureLoader"]().load(args.texture1 || "https://domenicobrz.github.io/assets/legendary-cursor/t3.jpg", function(texture) {
         // setting these values will prevent the texture from being downscaled internally by three.js
         texture.generateMipmaps = false;
         texture.wrapS = texture.wrapT = three__WEBPACK_IMPORTED_MODULE_0__["ClampToEdgeWrapping"];
@@ -49133,7 +49138,7 @@ LegendaryCursor.init = function(args) {
         onDl();
     });
 
-    new three__WEBPACK_IMPORTED_MODULE_0__["TextureLoader"]().load(args.texture2 || "src/assets/t6_1.jpg", function(texture) {
+    new three__WEBPACK_IMPORTED_MODULE_0__["TextureLoader"]().load(args.texture2 || "https://domenicobrz.github.io/assets/legendary-cursor/t6_1.jpg", function(texture) {
         // setting these values will prevent the texture from being downscaled internally by three.js
         texture.generateMipmaps = false;
         texture.wrapS = texture.wrapT = three__WEBPACK_IMPORTED_MODULE_0__["ClampToEdgeWrapping"];
@@ -49142,7 +49147,7 @@ LegendaryCursor.init = function(args) {
         onDl();
     });
 
-    new three__WEBPACK_IMPORTED_MODULE_0__["TextureLoader"]().load("src/assets/ts.png", function(texture) {
+    new three__WEBPACK_IMPORTED_MODULE_0__["TextureLoader"]().load(args.texture3 || "https://domenicobrz.github.io/assets/legendary-cursor/ts.png", function(texture) {
         t4 = texture;        
         onDl();
     });
