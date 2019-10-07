@@ -29,7 +29,7 @@ window.addEventListener("load", () => {
 });
 ```
 
-There's a few options you can change with the following arguments:
+There are a few options you can change with the following arguments:
 
 ``` javascript
 import LegendaryCursor from "legendary-cursor";
