@@ -6,12 +6,12 @@ This Legendary +10 Cursor library grants to the user an unlimited feeling of pow
 
 A direct consequence of using this skin for your cursor is the permanent modification of the following attributes:
 
-- [x] *+380%* Clicking precision
-- [x] *+280%* Mouse ferocity
-- [x] *+120%* Left click magic power
-- [x] *+380%* Carpal tunnel chance reduction
-- [x] *+380%* Wrist pain reduction
-- [x] *+999%* User random swing chance
+- [x] **+380%** Clicking precision
+- [x] **+280%** Mouse ferocity
+- [x] **+120%** Left click magic power
+- [x] **+380%** Carpal tunnel chance reduction
+- [x] **+380%** Wrist pain reduction
+- [x] **+999%** User random swing chance
 
 # How to get it
 
