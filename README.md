@@ -1,5 +1,7 @@
 # Eternal cursor of http dominance
 
+<img src="https://github.com/Domenicobrz/legendary-cursor/blob/master/screenshots/s1.jpg" width="100%">
+
 This Legendary +10 Cursor library grants to the user an unlimited feeling of power and accomplishment as soon as the swing effect starts
 
 A direct consequence of using this skin for your cursor is the permanent modification of the following attributes:
