@@ -51,6 +51,10 @@ window.addEventListener("load", () => {
 });
 ```
 
+# Demo
+
+[Try it here!](https://domenicobrz.github.io/)
+
 # Credits
 
 Took inspiration from [this awesome article](https://tympanus.net/codrops/2019/09/24/crafting-stylised-mouse-trails-with-ogl/) made by [Nathan Gordon](https://github.com/gordonnl)
