@@ -269,7 +269,7 @@ function animate(now) {
             mouseMixer: mouseMixer,
         });
 
-        console.log(velocityOpacity.toFixed(2));
+        // console.log(velocityOpacity.toFixed(2));
 
 
 
