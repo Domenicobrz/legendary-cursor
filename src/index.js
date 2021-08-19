@@ -169,7 +169,8 @@ LegendaryCursor.init = function(args) {
         // });
 
         window.addEventListener("mousemove", onMouseMove);
-    
+        window.addEventListener("touchmove", onTouchMove, false);
+
         clock.start();
         animate();
     }
@@ -720,9 +721,19 @@ let textureDisp  = new THREE.Vector2(0, 0);
 let lastTextureDisp = new THREE.Vector2(0, 0);
 
 function onMouseMove(e) {
-
     let ux = (e.clientX / innerWidth) * 2 - 1;
     let uy = ((innerHeight - e.clientY) / innerHeight) * 2 - 1;
+
+    let v = vec3(ux * aspectRatio, uy, 0);
+
+    currMousePos = v;
+
+    lastTextureDisp = new THREE.Vector2(ux, uy);
+}
+
+function onTouchMove(e) {
+    let ux = (e.touches[0].clientX / innerWidth) * 2 - 1;
+    let uy = ((innerHeight - e.touches[0].clientY) / innerHeight) * 2 - 1;
 
     let v = vec3(ux * aspectRatio, uy, 0);
 
